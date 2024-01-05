@@ -26,9 +26,9 @@ public class Main {
       // special case the "quit" command
       if (input.equalsIgnoreCase("quit")) {
         done = true;
-    //   } else if (
-    //     !UnitTestRunner.processCommand(input, Main::processCommand)
-    //   ) {
+      } else if (
+        !UnitTestRunner.processCommand(input, Main::processCommand)
+      ) {
         // We allowed the UnitTestRunner to handle the command first.
         // If the UnitTestRunner didn't handled the command, process normally.
         String result = processCommand(input);
